@@ -2,6 +2,7 @@
 
 import React from 'react';
 import useOnScreen from '../hooks/useOnScreen';
+import Image from 'next/image'; // Impor komponen Image
 
 const About: React.FC = () => {
   const isVisible = useOnScreen({ threshold: 0.1 });
@@ -18,16 +19,16 @@ const About: React.FC = () => {
         </h2>
         <p className={`text-center max-w-md ${isVisible ? 'slide-up' : 'opacity-0'}`}>
           Hi, my name is Floren Destyanindi, a student from SMKN 21 Jakarta. I like watching dramas, especially romance dramas. I also like groups from South Korea. My favorite groups are Straykids, Itzy, Nmixx, Day6, and Xdinary Heroes.
-          Let's click <a href="#more" className="text-yellow-600 underline">More</a>
+          Let&apos;s click <a href="#more" className="text-yellow-600 underline">More</a>
         </p>
       </div>
       <div className="flex-1 flex justify-center">
-        <img
+        <Image
           src="/bub.png" // Ganti dengan path gambar yang sesuai
           alt="Deskripsi Gambar"
-          width="400"
-          height="300"
-          className={` ${isVisible ? 'slide-up' : 'opacity-0'}`}
+          width={400} // Tentukan lebar gambar
+          height={300} // Tentukan tinggi gambar
+          className={`${isVisible ? 'slide-up' : 'opacity-0'}`}
           style={{ transition: 'opacity 0.5s' }} // Transisi opacity untuk efek muncul
         />
       </div>

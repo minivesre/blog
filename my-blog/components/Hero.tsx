@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         height={160}
         className="rounded slide-up"
       />
-      <h2 className="text-4xl font-bold my-4 slide-up">Hello, I'm Floren</h2>
+      <h2 className="text-4xl font-bold my-4 slide-up">Hello, Im Floren</h2>
       <p className="slide-up">Wanna know more about me?</p>
       <a href="#about" className="mt-4 text-yellow-400 slide-up">
         Click here to know
